@@ -1,0 +1,350 @@
+[
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقييمنا</title>
+    <style>
+        /*style.css */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+       
+
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #bde5d2;
+            font-family: 'Poppins', sans-serif;
+            direction: rtl;
+           
+        }
+
+        .textup {
+            text-align: center;
+            color: rgb(11, 118, 11);
+            font-weight: 700;
+        }
+
+        i {
+            margin-left: 3px;
+        }
+
+        .form-box {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            height: fit-content;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .radio-group {
+            display: flex;
+            margin-bottom: 16px;
+        }
+
+        input[type="radio"] {
+            margin-left: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 17px;
+            color: green;
+            font-weight: 600;
+            text-align: right;
+            width: 100%;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #368b44;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 15px;
+            transition: .2s linear;
+        }
+
+        button:hover {
+            background-color: #0a6808;
+            border: none;
+            transform: translateY(-10px);
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background-color: rgb(56, 88, 78);
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        .logo {
+            width: 140px;
+            height: auto;
+        }
+
+        .menu {
+            width: 100%;
+            display: flex;
+        }
+
+        .menu ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 0;
+        }
+
+        .menu ul li {
+            list-style: none;
+            margin-right: 20px;
+            font-size: 14px;
+        }
+
+        .menu ul li a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            transition: color 0.4s ease-in-out;
+            white-space: nowrap;
+        }
+
+        .menu ul li a:hover {
+            color: #ae7878;
+        }
+
+        .ratings {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rating-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            width: 100%;
+            text-align: right;
+        }
+
+        .rating-item:last-child {
+            border-bottom: none;
+        }
+
+        .rating-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rating-name {
+            font-weight: bold;
+            color: green;
+        }
+
+        .rating-stars {
+            font-size: 18px;
+            color: #f5b301;
+        }
+
+        .rating-message {
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .stars {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+
+        .stars input[type="radio"] {
+            display: none;
+        }
+
+        .stars label {
+            font-size: 24px;
+            color: #ddd;
+            cursor: pointer;
+        }
+
+        .stars input[type="radio"]:checked~label {
+            color: #f5b301;
+        }
+
+        .stars label:hover,
+        .stars label:hover~label {
+            color: #f5b301;
+        }
+        h1 {
+            color: green;
+            margin-top: 150px;
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <div class="navbar">
+            <img src="img/png logo final.png" alt="Logo" class="logo">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">الصفحة الرئيسية</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="contact.html">التواصل معنا</a></li>
+                    <li><a href="aboutus.html">عنا</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h1> الرجاء تقييمنا</h1>
+
+        <div class="form-box">
+            <form id="ratingForm">
+                <label for="uname">
+                    <i class="fa fa-solid fa-user"></i>
+                    الاسم
+                </label>
+                <input type="text" id="uname" name="uname" required>
+
+                <label for="email">
+                    <i class="fa fa-solid fa-envelope"></i>
+                    البريد الالكتروني
+                </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    رقم الاتصال
+                </label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label>
+                    <i class="fa-solid fa-face-smile"></i>
+                    هل أنت سعيد مع خدماتنا
+                </label>
+                <div class="radio-group">
+                    <input type="radio" id="yes" name="satisfy" value="Yes" checked>
+                    <label for="yes">نعم</label>
+
+                    <input type="radio" id="no" name="satisfy" value="No">
+                    <label for="no">لا</label>
+                </div>
+
+                <label for="stars">
+                    <i class="fa-solid fa-star"></i>
+                    كيف تقيم خدماتنا؟
+                </label>
+                <div class="stars">
+                    <input type="radio" id="star5" name="stars" value="5">
+                    <label for="star5">&#9733;</label>
+                    <input type="radio" id="star4" name="stars" value="4">
+                    <label for="star4">&#9733;</label>
+                    <input type="radio" id="star3" name="stars" value="3">
+                    <label for="star3">&#9733;</label>
+                    <input type="radio" id="star2" name="stars" value="2">
+                    <label for="star2">&#9733;</label>
+                    <input type="radio" id="star1" name="stars" value="1" checked>
+                    <label for="star1">&#9733;</label>
+                </div>
+
+                <label for="msg">
+                    <i class="fa-solid fa-comments" style="margin-left: 3px;"></i>
+                    الرجاء كتابة مقترحات لتحسين خدماتنا
+                </label>
+                <textarea id="msg" name="msg" rows="4" cols="10" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+
+        <div class="ratings" id="ratings">
+           
+        </div>
+    </div>
+
+
+    <script>
+
+    
+        document.getElementById('ratingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const uname = document.getElementById('uname').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const satisfy = document.querySelector('input[name="satisfy"]:checked').value;
+            const stars = document.querySelector('input[name="stars"]:checked').value;
+            const msg = document.getElementById('msg').value;
+
+            const ratingItem = document.createElement('div');
+            ratingItem.className = 'rating-item';
+            ratingItem.innerHTML = `
+                <div class="rating-header">
+                    <span class="rating-name">${uname}</span>
+                    <span class="rating-stars">${'&#9733;'.repeat(stars)}${'&#9734;'.repeat(5 - stars)}</span>
+                </div>
+                <div class="rating-message">${msg}</div>
+            `;
+
+            document.getElementById('ratings').appendChild(ratingItem);
+
+            document.getElementById('ratingForm').reset();
+        });
+
+        document.getElementById('ratingForm').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                document.querySelector('button[type="submit"]').click();
+            }
+        });
+    </script>
+</body>
+
+</html>
